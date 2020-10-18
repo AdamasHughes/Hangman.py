@@ -21,7 +21,7 @@ def play(word):
         guess = input("Please guess a letter or word").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
-               print("You already tried guessed that letter",quess)
+               print("You already tried guessed that letter", guess)
             elif guess not in word:
                 print(guess, "is not in the word.")
                 tries -=1
